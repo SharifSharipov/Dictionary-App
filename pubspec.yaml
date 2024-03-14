@@ -1,0 +1,58 @@
+name: dictionary_app
+description: Dictionary app
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.1.4
+  freezed_annotation: ^2.4.1
+  overlay_support: ^2.1.0
+  keyboard_dismisser: ^3.0.0
+  equatable: ^2.0.5
+  dio: ^5.4.1
+  get_it: ^7.6.7
+  internet_connection_checker: ^1.0.0+1
+  sqflite: ^2.3.2
+  path: ^1.9.0
+  speech_to_text: ^6.6.0
+  audioplayers: ^4.1.0
+  shared_preferences: any
+  pdf: ^3.10.8
+  permission_handler: ^11.3.0
+  open_file: ^3.3.2
+  visibility_detector: ^0.4.0+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.8
+  freezed: ^2.4.7
+  json_serializable: ^6.7.1
+  flutter_lints: ^3.0.1
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/database/eng_dictionary.db
+    - assets/fonts/
+
+  fonts:
+    - family: WorkSans
+      fonts:
+        - asset: assets/fonts/WorkSans-Bold.ttf
+        - asset: assets/fonts/WorkSans-Regular.ttf
+
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
