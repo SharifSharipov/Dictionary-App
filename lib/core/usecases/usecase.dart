@@ -12,6 +12,8 @@ class NoParams extends Equatable {
   List<Object?> get props => [];
 }
 
+
+
 class SignUpParams extends Equatable {
   final String firstName;
   final String lastName;
